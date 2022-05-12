@@ -203,27 +203,55 @@ body {
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 /* Code for individual sketches */
 #sketch1 {
-    background-image: url('00Images/00_Map/0.jpg');
+    /* background-image: url('00Images/00_Map/0.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
     transition: all 0.25s;
 }
 
+.cls-5 {
+    fill: #1a1a1a;
+    stroke-width: none;
+    font-size: 8px;
+}
+
+#sheet1-map1 {
+    display: block;
+}
+
+#sheet1-map2 {
+    display: none;
+}
+
+#sheet1-map3 {
+    display: none;
+}
+
+#sheet1-map4 {
+    display: none;
+}
+
+#sheet1-map5 {
+    display: none;
+}
+
 #sketch2 {
-    background-image: url('00Images/00_Map/serengetiMap-01.png');
+    /* background-image: url('00Images/00_Map/serengetiMap-01.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
 }
 
 #sketch3 {
-    background-image: url('00Images/01_vegChange/01.jpg');
+    /* background-image: url('00Images/01_vegChange/01.jpg'); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
     transition: all 0.25s;
 }
+
+
 
 
 
