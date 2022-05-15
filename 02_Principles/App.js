@@ -91,7 +91,7 @@ disableSize();
 slider3.addEventListener('input', () => {
 
     if (slider3.value == 3) {
-        slider1.value == 1;
+        slider1.value = 1;
         disableMovement();
         unDisableSize();
         grass.style.display = 'none';
