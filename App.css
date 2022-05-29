@@ -1,0 +1,918 @@
+/* Code for all the sheets and respective content inside */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#landing_01 {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2c01e;
+    margin: 0;
+    padding: 0;
+}
+
+#illustration img {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+#title_bg {
+    box-sizing: border-box;
+    width: 35vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0 0 0 65vw;
+    background-color: #220440;
+    transition: all 0.35ms ease-in-out;
+}
+
+#landing_title {
+    box-sizing: border-box;
+    width: 75%;
+    margin: 0;
+    color: #e54f3b;
+    font-family: 'Hepta Slab', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 5%;
+    border-bottom: solid 2.5px #f2c01e;
+}
+
+#student_label {
+    box-sizing: border-box;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 0 0;
+    padding: 5px;
+    color: #f2c01e;
+    /* font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+#my_name {
+    box-sizing: border-box;
+    padding-left: 10%;
+}
+
+#the_date {
+    box-sizing: border-box;
+    padding-right: 10%;
+    padding-top: 5px;
+    border-right: solid 1px #f2c01e;
+}
+
+#intro_text {
+    box-sizing: border-box;
+    width: 900px;
+    font-family: 'Fauna One', serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #5e6472;
+    margin: 40px 0 20px 0;
+    padding: 10px;
+}
+
+#spacer0 {
+    box-sizing: border-box;
+    width: 900px;
+    height: 100px;
+    border-top: 1.5px solid rgba(145, 145, 145, 1);
+    margin: 25px 0 0 0;
+}
+
+#spacer_last {
+    box-sizing: border-box;
+    width: 900px;
+    height: 100px;
+    border-bottom: 1.5px solid rgba(145, 145, 145, 1);
+    margin-bottom: 25px;
+}
+
+.in_betweeners {
+    box-sizing: border-box;
+    width: 900px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #5e6472;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.viz_tip {
+    box-sizing: border-box;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    background-color: rgba(242, 192, 30, 0.5);
+    border-radius: 25px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.titles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+    height: 100px;
+    margin: 0;
+}
+
+/* A DIV THAT PROVIDES SOME SPACE BETWEEN SECTIONS */
+.spacer {
+    box-sizing: border-box;
+    width: 900px;
+    height: 80px;
+    margin: 25px 0 0 0;
+}
+
+/* THE MAIN TITLE OF A SECTION */
+.mainTitles {
+    color: #e54f3b;
+    font-family: 'Hepta Slab', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    /* font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 40px; */
+    text-align: center;
+}
+
+/* CODE FOR THE SHEETS, THAT CONTAIN EACH TOPIC - .sheets HAS TWO CHILDREN: (1) .vizPanels (2) .textPanels */
+.sheets {
+    box-sizing: border-box;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    border-radius: 10px;
+    background-color: #fefefe;
+    padding: 50px;
+    margin: 0 0 20px 0;
+    /* box-shadow: 0px 0px 20px 0.5px rgba(0, 0, 0, 0.25); */
+}
+
+/* CODE FOR THE TEXT ON THE RIGHT - THE PARENT HERE, IS .textPanel WHICH HAS TWO CHILDREN: (1) .headings (2) .bodyTexts */
+.textPanels {
+    box-sizing: border-box;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.headings {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    color: #3c3c3c;
+    font-family: 'Hepta Slab', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #f2c01e;
+}
+
+.bodyTexts {
+    box-sizing: border-box;
+    width: 100%;
+    color: #3c3c3c;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    /* font-size: 18px; */
+    margin: 20px 0 0 0;
+}
+
+/* RELATED TO THE VISUALIZATIONS - EACH VISUALIZATION IS CONTAINED WITHIN .sketches WHICH IS CONTAINED WITHIN .vizPanel. THE PARENT HERE, IS .vizPanel WHICH HAS TWO CHILDREN: (1) .sketches (2) .intPanels */
+.vizPanels {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    width: 550px;
+    /* height: 500px; */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* RELATED TO THE VISUALIZATIONS ABOVE ALL THE INTERACTIVE ELEMENTS ON THE LEFT OF THE SHEET. THE .sketches IS THE MAIN PARENT CONTAINER FOR ALL SVGs AND IMAGES */
+.sketches {
+    box-sizing: border-box;
+    display: flex;
+    background-color: #fefefe;
+    width: 550px;
+    height: 375px;
+    min-width: 250px;
+    margin: 0 0 0 0;
+}
+
+/* RELATED TO THE INTERACTIVE PANELS UNDER EACH VISUALIZATION. THE .intPanels IS THE MAIN PARENT CONTAINER FOR ALL SLIDERS AND OTHER CONTAINERS THAT HAVE SLIDERS WITHIN THEM */
+.intPanels {
+    box-sizing: border-box;
+    width: 550px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+}
+
+/* .intPanels HAS TWO CHILDREN: (1) .slider (2) .int-panel-children. MOST OF THE .slider ARE THE DIRECT CHILDREN OF .intPanels, WHILE SOME ARE THE CHILDREN OF .int-panel-children*/
+.slider {
+    width: 100%;
+    outline: none;
+    border-radius: 12px;
+}
+
+#sketch1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    transition: all 0.25s;
+}
+
+.cls-5 {
+    fill: #1a1a1a;
+    stroke-width: none;
+    font-size: 8px;
+}
+
+#sheet1-map1 {
+    display: block;
+}
+
+#sheet1-map2 {
+    display: none;
+}
+
+#sheet1-map3 {
+    display: none;
+}
+
+#sheet1-map4 {
+    display: none;
+}
+
+#sheet1-map5 {
+    display: none;
+}
+
+#sketch2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+#sketch3 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transition: all 0.25s;
+}
+
+#season_indicator {
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #21170a;
+    border-radius: 20px;
+    position: absolute;
+    margin: 290px 0 0 380px;
+    transition: position 0s;
+}
+
+#season_color {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #21170a;
+    background-color: white;
+    border-radius: 25px;
+}
+
+#button-veg {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    position: absolute;
+    margin: 315px 0 10px 0;
+    transition: position 0s;
+}
+
+#sketch5 {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+#sketch7 {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sketch8 {
+    justify-content: none;
+    align-items: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+#Species {
+    pointer-events: none;
+}
+
+.qwe-4 {
+    cursor: pointer;
+}
+
+.highlight-panel {
+    width: 300px;
+    height: 250px;
+    padding: 30px 40px;
+    position: absolute;
+    display: none;
+    border: 1px solid rgba(145, 145, 145, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    /* backdrop-filter: blur(7.5px); */
+    cursor: pointer;
+}
+
+.highlight-panel-images {
+    width: 125px;
+    height: 220px;
+}
+
+#grass-panel {
+    margin: 100px 0 0 100px;
+}
+
+#lion-panel {
+    margin: 90px 0 0 107px;
+}
+
+#buffalo-panel {
+    margin: 50px 0 0 150px;
+}
+
+#zebra-panel {
+    margin: 125px 0 0 50px;
+}
+
+#wildebeest-panel {
+    margin: 100px 0 0 120px;
+}
+
+#gazelle-panel {
+    margin: 125px 0 0 180px;
+}
+
+#giraffe-panel {
+    margin: 50px 0 0 0px;
+}
+
+#elephant-panel {
+    margin: 50px 0 0 40px;
+}
+
+#hyena-panel {
+    margin: 90px 0 0 62px;
+}
+
+#tree-panel {
+    margin: 100px 0 0 70px;
+}
+
+.highlight-panel-headings {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.highlight-body-text {
+    width: 140px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11px;
+}
+
+
+#intPanel2 {
+    width: 380px;
+}
+
+/* THIS WAS SOME CODE TAKEN FROM YOUTUBE TO MAKE THE SLIDERS LOOK "COOLER" */
+/* .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 12px;
+    box-shadow: inset 0 4px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.slider::-webkit-slider-thumb {
+    border: 2px solid;
+    border-color: #373F51;
+    background-color: #ED9B40;
+}
+
+.slider:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+} */
+
+#movement {
+    width: 150px;
+}
+
+#body-size {
+    width: 150px;
+}
+
+#inherent-nature {
+    width: 150px;
+}
+
+#inherent-nature div {
+    color: #d54c1f;
+}
+
+.intPanels div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+}
+
+.int-panel-children {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.int-panel-children input {
+    width: 100%;
+    margin: 0;
+}
+
+#intPanel4 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 550px;
+    height: 50px;
+    margin: 10px 0 0 0;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.int-panel-buttons {
+    box-sizing: border-box;
+    width: 108px;
+    height: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500;
+    /* border: 1px solid rgba(145, 145, 145, 0.2); */
+    /* box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, .15); */
+    background-color: rgba(242, 192, 30, 1);
+    border: none;
+    border-radius: 20px;
+    /* backdrop-filter: blur(2.5px); */
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.int-panel-buttons:hover {
+    background-color: rgba(242, 192, 30, .5);
+    /* box-shadow: 0 0 80px 2px rgba(0, 0, 0, .25); */
+    transition: background-color 0.5s;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for individual sketches */
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for the last panel */
+#lastPanel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: none;
+    padding: 25px 42px;
+    margin: 0 0 50px 0;
+}
+
+#HeadingButton {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 200px;
+    background-color: none;
+}
+
+#head_next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75px;
+    color: #a8a8a8;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+#head_next:hover {
+    color: #3c4c7e;
+    font-size: 40px;
+    transition: all 0.5s;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for the SHEETBEFORE5 */
+#int_panel_before_5 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 100px;
+}
+
+#int_panel_before_5 .rad_decor {
+    box-sizing: border-box;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2c01e;
+    border-radius: 25px;
+    margin: 0;
+    padding: 20px;
+}
+
+#int_panel_before_5 .rad_decor div {
+    box-sizing: border-box;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500;
+    /* background-color: #d54c1f; */
+    margin: 0;
+}
+
+/* #int_panel_before_5 span {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500;
+} */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for the SHEET6 */
+#int_panel_div_6 {
+    justify-content: center;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for the SHEETBEFORE 7 */
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for the SHEET BEFORE 9 */
+#viz_panel_before_9 {
+    width: 900px;
+}
+
+#sketch_before_9 {
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for the SHEET9 */
+#sketch9 {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for the SHEET 10 */
+#viz_panel_10 {
+    width: 900px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_1_10 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#intPanel_10 {
+    width: 600px;
+    height: 90px;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    /* background-color: green; */
+}
+
+#text_panel_10 {
+    box-sizing: border-box;
+    width: 300px;
+    height: 90px;
+    /* background-color: aqua; */
+}
+
+#heading_10 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 0 0 30px;
+}
+
+#body_10 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0 0 0 30px;
+    color: #3c3c3c;
+}
+
+#labels_10 {
+    font-size: 14px;
+}
+
+#timeline_label {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 35px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* -------------------------------------------------------------- */
+
+#container_2_10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#species_panel_10 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: none;
+    align-items: none;
+    width: 300px;
+    height: 375px;
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+}
+
+#sketch10 {
+    width: 600px;
+    height: 375px;
+    /* background-color: white; */
+}
+
+#base_10 {
+    /* display: none; */
+    pointer-events: none;
+
+}
+
+#sp_all {
+    cursor: pointer;
+}
+
+#tr_1 {
+    display: none;
+}
+
+#tr_2 {
+    display: none;
+}
+
+#tr_3 {
+    display: none;
+}
+
+#tr_4 {
+    display: none;
+}
+
+#tr_5 {
+    display: none;
+}
+
+#tr_6 {
+    display: none;
+}
+
+#tr_7 {
+    display: none;
+}
+
+#tr_8 {
+    display: none;
+}
+
+#tr_9 {
+    display: none;
+}
+
+#tr_10 {
+    display: none;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for the SHEET 8 */
+#int_panel_div_8 {
+    justify-content: center;
+}
+
+/* CONCLUSION */
+#head_conclusion {
+    width: 35%;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* For what happens when the window shrinks below 1000pixels */
+@media (max-width: 1000px) {
+    .titles {
+        width: 90%;
+    }
+
+    .sheets {
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 90%;
+        height: 620px;
+        padding: 10px;
+    }
+
+    #sheet2 {
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 90%;
+        height: 700px;
+        padding: 10px;
+    }
+
+    .textPanels {
+        width: 90%;
+    }
+
+    .vizPanels {
+        width: 90%;
+    }
+
+    .sketches {
+        width: 100%;
+    }
+
+    .intPanels {
+        width: 100%;
+    }
+
+    .intPanels div {
+        font-size: 12px;
+    }
+
+    #lastPanel {
+        width: 90%;
+        height: 400px;
+    }
+
+    #HeadingButton {
+        width: 90%;
+        height: 200px;
+    }
+
+    /* Stuff that changes in the sketches */
+    #sketch2 {
+        background-position-x: 40%;
+    }
+}
